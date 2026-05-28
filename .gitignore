@@ -1,0 +1,27 @@
+# Dependencies
+my-company-lp/node_modules/
+
+# Next.js
+my-company-lp/.next/
+my-company-lp/out/
+
+# Build
+my-company-lp/build/
+
+# Environment
+my-company-lp/.env
+my-company-lp/.env.local
+my-company-lp/.env.*.local
+
+# Misc
+my-company-lp/next-env.d.ts
+.DS_Store
+*.pem
+
+# Editor
+.vscode/
+
+# Source materials (binary files)
+LP用資料.docx
+LP用資料.zip
+_docx_extract/
