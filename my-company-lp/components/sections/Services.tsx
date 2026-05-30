@@ -165,16 +165,16 @@ export default function Services() {
 
                   {/* 料金 */}
                   <div className="border-t border-white/8 pt-5">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-white/40 text-xs">設置・制作費用</span>
-                      <span className="text-white font-bold font-inter">
+                    <div className="flex justify-between items-start gap-2 mb-2">
+                      <span className="text-white/40 text-xs flex-shrink-0 mt-0.5">設置・制作費用</span>
+                      <span className="text-white font-bold font-inter text-sm text-right break-all">
                         ¥{service.price.setup}
                         <span className="text-white/40 text-xs font-normal ml-1">円</span>
                       </span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-white/40 text-xs">月額費用</span>
-                      <span className="gradient-text font-bold font-inter text-sm">
+                    <div className="flex justify-between items-start gap-2">
+                      <span className="text-white/40 text-xs flex-shrink-0 mt-0.5">月額費用</span>
+                      <span className="gradient-text font-bold font-inter text-sm text-right break-all">
                         ¥{service.price.monthly}
                         <span className="text-white/40 text-xs font-normal ml-1">円/月</span>
                       </span>

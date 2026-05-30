@@ -129,8 +129,9 @@ export default function Flow() {
                           </p>
                         </div>
                         {step.duration && (
-                          <span className="flex-shrink-0 inline-flex items-center px-3 py-1 rounded-full text-xs glass border border-white/10 text-white/50">
-                            ⏱ {step.duration}
+                          <span className="inline-flex items-start gap-1 px-3 py-1.5 rounded-xl text-xs glass border border-white/10 text-white/50 max-w-full md:max-w-[220px]">
+                            <span className="flex-shrink-0">⏱</span>
+                            <span className="break-words">{step.duration}</span>
                           </span>
                         )}
                       </div>

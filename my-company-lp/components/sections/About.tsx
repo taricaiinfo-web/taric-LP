@@ -86,10 +86,10 @@ function StatItem({ end, suffix, label, prefix = '' }: StatItemProps) {
   const { count, ref } = useCountUp(end)
   return (
     <div ref={ref} className="text-center">
-      <div className="font-inter font-black text-3xl md:text-4xl gradient-text mb-1">
+      <div className="font-inter font-black text-xl sm:text-2xl md:text-3xl gradient-text mb-1 break-all">
         {prefix}{count.toLocaleString()}{suffix}
       </div>
-      <div className="text-white/50 text-sm">{label}</div>
+      <div className="text-white/50 text-xs sm:text-sm">{label}</div>
     </div>
   )
 }
@@ -172,11 +172,11 @@ export default function About() {
 
         {/* 数字で見る実績 */}
         <ScrollReveal>
-          <div className="glass rounded-2xl px-8 py-10 border border-white/5">
+          <div className="glass rounded-2xl px-4 sm:px-8 py-8 sm:py-10 border border-white/5">
             <p className="text-center text-white/40 text-xs font-inter tracking-widest uppercase mb-8">
               Service Highlights
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
               <StatItem end={30000} prefix="¥" suffix="〜" label="月額費用（最安）" />
               <StatItem end={24} suffix="時間" label="AIが自動対応" />
               <StatItem end={3} suffix="種類" label="サービスメニュー" />

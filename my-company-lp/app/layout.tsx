@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_JP, Inter } from 'next/font/google'
 import './globals.css'
 
@@ -15,6 +15,12 @@ const inter = Inter({
   variable: '--font-inter',
   display: 'swap',
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export const metadata: Metadata = {
   title: 'タリック AI Solutions | AI導入からHP制作まで中小企業のDXをワンストップ支援',

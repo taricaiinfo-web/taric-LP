@@ -22,6 +22,12 @@ body {
   background-color: var(--dark-navy);
   color: white;
   overflow-x: hidden;
+  min-width: 320px;
+}
+
+/* スマートフォンでのオーバーフロー防止 */
+img, video, iframe {
+  max-width: 100%;
 }
 
 /* ガラスモーフィズム */

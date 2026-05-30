@@ -125,11 +125,11 @@ export default function Footer() {
 
       {/* ボトムバー */}
       <div className="border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white/25 text-xs font-inter">
+        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col items-center gap-3 md:flex-row md:justify-between">
+          <p className="text-white/25 text-xs font-inter text-center md:text-left">
             © {currentYear} タリック AI Solutions. All rights reserved.
           </p>
-          <div className="flex gap-6 text-white/25 text-xs">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/25 text-xs">
             <a href="#" className="hover:text-white/50 transition-colors">プライバシーポリシー</a>
             <a href="#" className="hover:text-white/50 transition-colors">特定商取引法に基づく表記</a>
           </div>

@@ -100,10 +100,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass mb-8 text-sm font-medium"
+          className="inline-flex flex-wrap justify-center items-center gap-x-2 gap-y-1 px-4 sm:px-5 py-2 rounded-2xl sm:rounded-full glass mb-8 text-xs sm:text-sm font-medium max-w-[95vw]"
         >
-          <Sparkles className="w-4 h-4 text-electric-blue" />
-          <span className="text-electric-blue">
+          <Sparkles className="w-4 h-4 text-electric-blue flex-shrink-0" />
+          <span className="text-electric-blue text-center">
             🎉 今なら初期費用0円 ＋ 初月無料キャンペーン実施中
           </span>
         </motion.div>
@@ -115,7 +115,7 @@ export default function Hero() {
           animate="visible"
           className="mb-6"
         >
-          <motion.div variants={lineVariant} className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-2">
+          <motion.div variants={lineVariant} className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-2">
             <motion.a
               href="#services"
               className="gradient-text inline-block cursor-pointer"
@@ -137,7 +137,7 @@ export default function Hero() {
             </motion.a>
             <span className="text-white">まで</span>
           </motion.div>
-          <motion.div variants={lineVariant} className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-2">
+          <motion.div variants={lineVariant} className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-2">
             <span className="text-white">中小企業の</span>
             <span className="gradient-text">DX</span>
             <span className="text-white">を</span>
@@ -153,7 +153,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.8 }}
-          className="font-inter text-electric-blue/70 text-sm md:text-base tracking-[0.2em] uppercase mb-4"
+          className="font-inter text-electric-blue/70 text-[10px] sm:text-sm md:text-base tracking-wider sm:tracking-[0.15em] md:tracking-[0.2em] uppercase mb-4 px-2"
         >
           One-Stop DX Support for Small & Medium Businesses
         </motion.p>
