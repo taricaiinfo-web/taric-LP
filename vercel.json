@@ -1,6 +1,0 @@
-{
-  "rootDirectory": "my-company-lp",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs"
-}
